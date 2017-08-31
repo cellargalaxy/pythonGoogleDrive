@@ -35,7 +35,7 @@ SAVE_FOLDER_PATH = '/home/cellargalaxy'
 SCOPES = 'https://www.googleapis.com/auth/drive'
 TEMP_FILE_NAME = '.temp'
 APPLICATION_NAME = 'pythonGoogleDrive'
-CLIENT_JSON_FILE_NAME = '.pythonGoogleDrive-client.json'
+CLIENT_JSON_FILE_NAME = 'pythonGoogleDrive-client.json'
 FOLDER_MINE_TYPE = 'application/vnd.google-apps.folder'
 FILE_INFO = 'id, name, mimeType, parents, size, webViewLink, webContentLink'
 MARK_FILE_NAME = 'pythonGoogleDrive.txt'
@@ -53,7 +53,7 @@ class GoogleDiverAPI(object):
         """
         request = requests.get('http://www.cellargalaxy.top/pythonGoogleDiver.json')
         with open(TEMP_FILE_NAME, 'w') as file:
-            file.write(request.json())
+            file.write(json.dumps(request.json()))
 
     def delete_temp_file(self):
         """
@@ -67,11 +67,8 @@ class GoogleDiverAPI(object):
         通过密匙json获取客户的登录权限并生成资格证书
         Returns: 资格证书对象
         """
-        home_dir = os.path.expanduser('~')
-        credential_path = os.path.join(home_dir, CLIENT_JSON_FILE_NAME)
-
         # 这个应该意思是谷歌的应用商店对象
-        store = Storage(credential_path)
+        store = Storage(CLIENT_JSON_FILE_NAME)
         credentials = store.get()
         # 如果获取证书失败或者证书失效
         if not credentials or credentials.invalid:
@@ -83,7 +80,7 @@ class GoogleDiverAPI(object):
                 credentials = tools.run_flow(flow, store, flags)
             else:  # Needed only for compatibility with Python 2.6
                 credentials = tools.run(flow, store)
-            print('客户证书路径：' + credential_path)
+            print('客户证书：' + CLIENT_JSON_FILE_NAME)
         return credentials
 
     def get_service(self):
