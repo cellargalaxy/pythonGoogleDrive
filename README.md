@@ -37,10 +37,12 @@ application with the command-line parameter
 
 ![选区_003.png](http://www.cellargalaxy.top/blog/file/2017-08-31/选区_003.png)
 
-之后你就可以打开http://0.0.0.0:6600/jsonrpc操作了
+之后你就可以打开[http://0.0.0.0:6600/jsonrpc](http://0.0.0.0:6600/jsonrpc)操作了
 ## 之后的运行
 把pythonGoogleDrive-client.json文件与程序放置在相同路径下运行，短时间内不用再次授权，但不知道授权会不会失效，到时候就要再次授权了。
 ## 更多
-详细的实现或者调用亲看[googleDrive.py](https://github.com/cellargalaxy/pythonGoogleDrive/blob/master/googleDrive.py)文件。有比较详细的注释。
+详细的实现或者调用请看[googleDrive.py](https://github.com/cellargalaxy/pythonGoogleDrive/blob/master/googleDrive.py)文件。有比较详细的注释。
 
 还有，开多线程下载不知道会不会被封号什么的，请量力食用。
+
+博客[cellargalaxy](http://www.cellargalaxy.top/blog/article/10)
