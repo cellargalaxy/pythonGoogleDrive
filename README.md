@@ -29,13 +29,13 @@ application with the command-line parameter
 
 你的浏览器也会跳出来让你给程序授权
 
-![选区_001.png]((http://119.23.235.95/drive/201708/31/选区_001.png)
+![选区_001.png](http://119.23.235.95/drive/201708/31/选区_001.png)
 
 授权成功会在当前目录生成一个叫pythonGoogleDrive-client.json的文件，授权过程就是程序获取到这个文件。
 
 程序登录你的账户需要这个文件在当前目录下。
 
-![选区_003.png]((http://119.23.235.95/drive/201708/31/选区_003.png)
+![选区_003.png](http://119.23.235.95/drive/201708/31/选区_003.png)
 
 之后你就可以打开[http://0.0.0.0:6600/jsonrpc](http://0.0.0.0:6600/jsonrpc)操作了
 ## 之后的运行
