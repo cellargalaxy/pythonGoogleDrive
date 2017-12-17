@@ -25,17 +25,17 @@ application with the command-line parameter
 [11942:11977:0831/225359.861226:ERROR:browser_gpu_channel_host_factory.cc(103)] Failed to launch GPU process.
 已在现有的浏览器会话中创建新的窗口。
 ```
-![选区_002.png](http://www.cellargalaxy.top/blog/file/2017-08-31/选区_002.png)
+![选区_002.png](http://119.23.235.95/drive/201708/31/选区_002.png)
 
 你的浏览器也会跳出来让你给程序授权
 
-![选区_001.png](http://www.cellargalaxy.top/blog/file/2017-08-31/选区_001.png)
+![选区_001.png]((http://119.23.235.95/drive/201708/31/选区_001.png)
 
 授权成功会在当前目录生成一个叫pythonGoogleDrive-client.json的文件，授权过程就是程序获取到这个文件。
 
 程序登录你的账户需要这个文件在当前目录下。
 
-![选区_003.png](http://www.cellargalaxy.top/blog/file/2017-08-31/选区_003.png)
+![选区_003.png]((http://119.23.235.95/drive/201708/31/选区_003.png)
 
 之后你就可以打开[http://0.0.0.0:6600/jsonrpc](http://0.0.0.0:6600/jsonrpc)操作了
 ## 之后的运行
